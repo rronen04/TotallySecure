@@ -22,5 +22,10 @@ resource "alicloud_ram_account_password_policy" "corporate2" {
 module "ec2_security_group" {
   source = "git::ssh://git@github.com/Ban-XXX/plataforma-ec2SecurityGroup-aws-iac-terraform.git?ref=main"
 
-  # module input variables here
+  # module input 
+}
+
+variable "owner_email" {
+  type    = string
+  default = "ronen.test@example.com"
 }
