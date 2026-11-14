@@ -18,3 +18,9 @@ resource "alicloud_ram_account_password_policy" "corporate2" {
   password_reuse_prevention    = 5
   max_login_attempts           = 3
 }
+
+module "ec2_security_group" {
+  source = "git::ssh://git@github.com/Ban-XXX/plataforma-ec2SecurityGroup-aws-iac-terraform.git?ref=main"
+
+  # module input variables here
+}
