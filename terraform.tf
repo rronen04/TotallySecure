@@ -24,3 +24,8 @@ module "ec2_security_group" {
 
   # module input 
 }
+
+variable "owner_email" {
+  type    = string
+  default = "ronen.test@example.com"
+}
