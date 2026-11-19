@@ -20,12 +20,12 @@ resource "alicloud_ram_account_password_policy" "corporate2" {
 }
 
 module "ec2_security_group" {
-  source = "git::ssh://git@github.com/Ban-XXXX/plataforma-ec2SecurityGroup-aws-iac-terraform.git?ref=main1"
+  source = "git::ssh://git@github.com/Ban-XXXX/plataforma-ec2SecurityGroup-aws-iac-terraform.git?ref=main"
 
-  # module input 111
+  # module input 
 }
 
 variable "owner_email" {
   type    = string
-  default = "ronen.prueba1@example.com"
+  default = "ronen.prueba@example.com"
 }
